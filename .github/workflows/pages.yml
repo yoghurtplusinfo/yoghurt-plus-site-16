@@ -29,6 +29,8 @@ jobs:
           enablement: true
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@v4
